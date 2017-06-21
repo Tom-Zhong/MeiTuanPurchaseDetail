@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/images/common/meituan.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美团详情页面@钟贵勇</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="./static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/detail.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header">
+        <div class="h-content">
+            <div class="h-top">
+                <ul class="top-l fl">
+                    <li class="collect">
+                        <a href="javascript:;">
+                            <embed src="static/images/detail/collect.svg" width="13" height="13" type="image/svg+xml" /> 收藏美团
+                        </a>
+                    </li>
+                    <li class="login">
+                        <a href="javascript:;">登录</a>
+                        <a href="javascript:;">
+                           注册 </a>
+                    </li>
+                </ul>
+                <ul class="top-r fr">
+                    <li><a href="javascript:;">我的订单</a></li>
+                    <li><a href="javascript:;">我的美团</a></li>
+                    <li><a href="javascript:;">最近浏览</a></li>
+                    <li><a href="javascript:;">联系客服</a></li>
+                    <li><a href="javascript:;">我是商家</a></li>
+                    <li><a href="javascript:;">代理商招募</a></li>
+                    <li><a href="javascript:;">更多</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- nav start -->
+    <div class="h-main">
+        <div class="logo">
+            <h1>
+                <a href="javascript"></a>
+            </h1>
+            <div class="logo-right">
+                <a href="javascript">北京</a>
+                <a href="javascript">切换城市</a>
+            </div>
+        </div>
+        <div class="search">
+            <form action="#">
+                <!-- 输入框 -->
+                <div class="search-box">
+                    <div class="search-type">
+                        <a href="javascript:;">团购</a>
+                    </div>
+                    <input type="text" class="input-box" placeholder="请输入商品名城、地址等">
+                    <input type="button" class="search-btn" value="搜索">
+                </div>
+            </form>
+            <!-- 推荐列表 -->
+            <div class="recommd-list">
+                <ul>
+                    <li>虾吃虾涮</li>
+                    <li>烤肉</li>
+                    <li>东来顺</li>
+                    <li>好伦哥</li>
+                    <li>蛋糕</li>
+                    <li>烤鱼</li>
+                    <li>新辣道</li>
+                    <li>火炉火</li>
+                    <li>储值卡</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 保证 -->
+        <div class="promise">
+            <img src="static/images/common/promise.png" alt="保证">
+        </div>
+        <div class="classify">
+            <ul>
+                <li class="left">
+                    <span>全部分类
+                    <i></i>
+                    </span>
+                </li>
+                <li><a href="javascript">首页</a></li>
+                <li><a href="javascript">今日新单</a></li>
+                <li><a href="javascript">美食</a></li>
+                <li><a href="javascript">身边外卖</a></li>
+            </ul>
+        </div>
+        <!-- 网站地图 -->
+        <div class="locate">
+            <span>北京团购</span>
+            <span class="small-size">>></span>
+            <span>美食团购</span>
+            <span class="small-size">>></span>
+            <span>自助餐</span>
+            <span class="small-size">>></span>
+            <span>顶级鲜烤肉自助</span>
+        </div>
+    </div>
+    <!-- nav end -->
+    <!-- container start -->
+    <div class="container">
+        <div class="c-intro">
+            <h3>【两店通用】酷资时尚主题KTV</h3>
+            <h4>仅售158元，价值479元周六周日时光档3小时欢唱+下午茶套餐,可连续欢唱！免费WIFI</h4>
+            <!-- 大图片和小图片 -->
+            <div class="left-img">
+                <div class="big-img">
+                    <img src="static/images/detail/img1.jpg" alt="介绍图1">
+                </div>
+                <div class="img-list">
+                    <ul>
+                        <li>
+                            <img src="static/images/detail/img1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="static/images/detail/img1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="static/images/detail/img1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="static/images/detail/img1.jpg" alt="">
+                        </li>
+                        <li class="no-margin">
+                            <img src="static/images/detail/img1.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-price">
+                <div class="goods-price">
+                    <span class="buy-label">团购价</span>
+                    <span class="rmb">￥</span>
+                    <strong class="rmb-price">
+                        158
+                    </strong>
+                    <span class="normal-price">门店价<del>￥479</del></span>
+                </div>
+                <!-- 销售信息 -->
+                <div class="goods-info">
+                    <span>已售513</span>
+                    <span>4.1分</span>
+                    <span class="clr-padding">64人评价</span>
+                </div>
+                <div class="use-date">
+                    <span class="date-span">有效期</span>
+                    <span>截止到2017.03.31
+                        <em>周末、法定假日通用</em>
+                    </span>
+                </div>
+                <div class="goods-count">
+                    <span class="count-span">数量</span>
+                    <div class="change-count">
+                        <button class="change">−</button>
+                        <input type="text" value="1" class="input-count">
+                        <button class="change">+</button>
+                    </div>
+                </div>
+                <div class="goods-buy">
+                    <input type="button" class="buy">
+                    <div class="collect">
+                        <span>*</span>
+                        <span>收藏(281)</span>
+                    </div>
+                    <div class="share">
+                        <span>*</span>
+                        <span>分享到</span>
+                    </div>
+                    <span class="time">仅剩 6天 4小时 40分钟 23秒</span>
+                </div>
+                <div class="service">
+                    <span>服务承诺</span>
+                    <span>*</span>
+                    <span>随时退</span>
+                    <span>*</span>
+                    <span>过期退</span>
+                    <span>*</span>
+                    <span>真是评价</span>
+                </div>
+            </div>
+        </div>
+        <!-- 商品详情 -->
+        <div class="c-content">
+            <div class="left-content">
+                <div class="alert">
+                    <div class="alert-info">
+                        <p>【除外日期变更】新增不可用日期2017-01-13至2017-01-14、2016-12-30至2017-01-01、2017-01-20至2016-12-21、2016-12-16至2016-12-17、2016-12-23至2016-12-25、2017-01-27至2017-01-28、2017-01-06至2017-01-07，不便之处，深表歉意！</p>
+                    </div>
+                </div>
+                <!-- 该商家的其它团购 -->
+                <h3 class="other">
+                    该商家的其他团购
+                    <div class="other-price">
+                        <span>已售</span>
+                        <span>门市价</span>
+                        <span>团购价</span>
+                    </div>
+                </h3>
+                <div class="other-info">
+                    <span>【两店通用】周一至周五阳关档3小时欢唱+下午茶套餐</span>
+                    <ul>
+                        <li>￥118</li>
+                        <li>￥369</li>
+                        <li>428</li>
+                    </ul>
+                </div>
+                <!-- 锚点链接 20170325-->
+                <div class="saler-info">
+                    <ul>
+                        <li>商家位置</li>
+                        <li>购买须知</li>
+                        <li>本单详情</li>
+                        <li>商家介绍</li>
+                        <li>消费评价</li>
+                    </ul>
+                </div>
+                <!-- 商家位置 -->
+                <div class="sale-location">
+                    <h3 class="saler-location-title">
+                    商家位置
+                    </h3>
+                    <div class="leftMap">
+                        <span>查看完整地图</span>
+                    </div>
+                    <div class="rightInfo">
+                        <div class="first-loc">
+                            <h5><a href="#">酷资时尚主图题KTV(三里屯旗舰店)</a></h5>
+                            <div class="real-loc">
+                                <p class="adjust-loc"><a href="#">地址</a>：朝阳区三里屯路33号3.3大厦B1楼嬰（三里屯太古里北区）</p>
+                                <div class="read-map">
+                                    <a href="#">查看地图</a>
+                                    <a href="">
+                                        公交/驾车去这里
+                                    </a>
+                                </div>
+                                <p>
+                                    地铁：距望京南站约539米
+                                </p>
+                                <p class="adjust-padding">
+                                    电话：010-63438888
+                                </p>
+                                <h5 class="second-loc"><a href="#">酷姿时尚主题KTV（望京总店）</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购买须知 -->
+                <div class="buy-know">
+                    <h3>购买须知</h3>
+                    <div class="table">
+                        <dl class="buy-know-info">
+                            <dt>有效期</dt>
+                            <dd>2016-02-15至2017-04-30</dd>
+                            <dt>不可用日期</dt>
+                            <dd>2017年4月2日至4月4日、周六至周日</dd>
+                            <dt>温馨提示</dt>
+                            <dd>如需团购券发票，请您在消费时向商户咨询; 为了保障您的权益，建议使用美团、点评网线上支付。若使用其他支付方式导致纠纷，美团、点评网不承担任何责任，感谢您的理解和支持！
+                            </dd>
+                            <dt>预约信息</dt>
+                            <dd>请您提前1小时预约</dd>
+                            <dt>商家服务</dt>
+                            <dd>提供免费WiFi; 停车位信息详询商户
+                            </dd>
+                            <dt>除外日期</dt>
+                            <dd>每周六、周日不可用; 2017-04-02至2017-04-04不可用
+                            </dd>
+                            <dt>规则提醒</dt>
+                            <dd>商家根据使用人数安排包厢类型，详询商户; 同时段内，可使用多张团购券连续欢唱; 谢绝自带酒水、饮料、食品; 不再与其他优惠同享
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 本单详情 -->
+                <div class="paper-info">
+                    <h3 class="paper-info-title">本单详情</h3>
+                    <div class="table-info">
+                        <table>
+                            <tbody>
+                                <tr class="title">
+                                    <th>日期</th>
+                                    <th>时段</th>
+                                    <th>小房
+                                        <br><span>3-5人</span></th>
+                                    <th>中房
+                                        <br><span>5-7人</span></th>
+                                    <th>大房
+                                        <br><span>8-10人</span></th>
+                                </tr>
+                                <tr class="content">
+                                    <td>周一到周五</td>
+                                    <td>13:00-19-00</td>
+                                    <td>1张/3小时
+                                        <br/><span>套餐A</span></td>
+                                    <td>
+                                        1张/3小时
+                                        <br/>另加40.00元
+                                        <br/><span>套餐A</span>
+                                    </td>
+                                    <td>
+                                        1张/3小时
+                                        <br/>另加100.00元
+                                        <br/><span>套餐A</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 下午茶套餐 -->
+                <div class="afternoon-tea-pack">
+                    <table>
+                        <tbody>
+                            <tr class="title">
+                                <th>套餐内容</th>
+                                <th>单价</th>
+                                <th>数量/规格</th>
+                                <th>小计</th>
+                            </tr>
+                            <tr>
+                                <td>下午茶三层餐点 </td>
+                                <td>128元</td>
+                                <td>1份</td>
+                                <td>128元</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>柠檬红茶 </td>
+                                <td>38元</td>
+                                <td>1壶</td>
+                                <td>38元</td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 其它方案补充 -->
+                <div class="combo-tip">
+                    <h3 class="combo-tip__title">其他方案补充：</h3>
+                    <div class="combo-top__content">
+                        注：
+                        <br>
+                        <br>1、小房1张券，中房需另付40元，大房需另付100元
+                        <br>
+                        <br>温馨提示：2016年12月16日至2017年1月31日该团购券不可用
+                        <br>
+                        <br>&nbsp;
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <!-- 套餐详情介绍 -->
+                <p class="standard-bar">套餐详情介绍</p>
+                <div class="img-container">
+                    <img src="static/images/detail/img2.jpg" alt="">
+                    <img src="static/images/detail/img2.jpg" alt="">
+                    <img src="static/images/detail/img2.jpg" alt="">
+                    <img src="static/images/detail/img2.jpg" alt="">
+                </div>
+                <!-- 商家介绍 -->
+                <div class="saler-intro">
+                    <h2>商家介绍</h2>
+                    <p class="standard-bar">商户介绍</p>
+                    <div class="saler-intro-info">
+                        <p>
+                            - 主题KTV，尽情炫自己 -
+                            <br>　　酷姿时尚主题KTV（COOLTH KTV CLUB）-童话世界等你来！作为主题KTV品牌，酷姿时尚主题KTV深受京城时尚潮人、明星达人青睐。 酷姿望京店于2009年9月开业，就立刻成为众多时尚媒体关注的焦点，纷纷对酷姿时的主题房间概念争相报道；2011年9月，酷姿三里屯旗舰店在历经10个月的精心策划，在三里屯北区3.3大厦B1层惊艳绽放；酷姿三里屯旗舰店从空间规划、设计创意、服务理念、运营管理上全方位提升，为世人呈现了一个童话般的主题KTV王国。酷姿凭借先进的点歌系统、专业音响设备、十余万劲歌曲库，潮流时尚的主题房间设计装修，精选的台式美味小吃、地道的日式料理、经典的酒吧饮品，以及周末激情四射的歌、舞演出，男酷女姿麦霸PK赛，带给你层出不穷的主题K歌乐趣！在酷姿相机I PhoneI Pad 是K友来酷姿的必备，在酷姿你就是主角，在酷姿你就可以尽情炫自己，酷姿时尚主题KTV期待你的光临！
+                        </p>
+                    </div>
+                    <p class="blk-detail"></p>
+                </div>
+                <!-- 消费评价 -->
+                <div class="buy-comment">
+                    <h3>消费评价</h3>
+                    <!-- 左侧总评价 -->
+                    <div class="overview-detail">
+                        <div class="total-comment">
+                            <span>
+                            <span class="rate-overview">
+                                4.1
+                            </span> 分
+                            </span>
+                        </div>
+                        <div class="star-comment">
+                            <span class="unshy-star">
+                                <span class="shy-star"></span>
+                            </span>
+                        </div>
+                        <div class="total-group">
+                            共 <strong>62</strong> 人评价
+                        </div>
+                    </div>
+                    <!-- 右侧评分分布 -->
+                    <div class="count-detail">
+                        <div class="count-wrapper">
+                            <div class="count-group">
+                                <span class="score">1分</span><span class="percent-box"><em ></em></span>3人
+                            </div>
+                            <div class="count-group">
+                                <span class="score">1分</span><span class="percent-box"><em ></em></span>3人
+                            </div>
+                            <div class="count-group">
+                                <span class="score">1分</span><span class="percent-box"><em ></em></span>3人
+                            </div>
+                            <div class="count-group">
+                                <span class="score">1分</span><span class="percent-box"><em ></em></span>3人
+                            </div>
+                            <div class="count-group">
+                                <span class="score">1分</span><span class="percent-box"><em ></em></span>3人
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底下详情栏 -->
+                <div class="rate-detail-info">
+                    <ul class="rate-menu">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">晒图评价</a></li>
+                        <li><a href="#">只看评分</a></li>
+                        <li><a href="#">默认排序</a></li>
+                    </ul>
+                    <!-- 评价详情区 -->
+                    <div class="comment-area">
+                        <div class="comment">
+                            <!-- 左侧用户信息栏 -->
+                            <div class="left-comment">
+                                <div class="user-img">
+                                    <img src="static/images/detail/user.png" alt="">
+                                </div>
+                                <span class="user-name">ONe370126768</span>
+                                <span class="user-rate"></span>
+                            </div>
+                            <!-- 右侧评论信息栏 -->
+                            <div class="right-comment">
+                                <div class="info">
+                                    <div class="rate-status">
+                                        <span class="comment-rating">
+                                            <span class="rate-stars"></span>
+                                        </span>
+                                        <span class="time">2017-03-06</span>
+                                    </div>
+                                </div>
+                                <div class="comment-view">
+                                    <p class="content">
+                                        朋友小聚，朋友推荐酷姿，卫生干净，价格优惠，特意选了个鬼屋系列，哈哈！好有感觉。音质不错，棒棒哒，值得推荐
+                                    </p>
+                                    <div class="comment-img">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="shop-name">酷姿时尚主题KTV（望京总店）</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <!-- 左侧用户信息栏 -->
+                            <div class="left-comment">
+                                <div class="user-img">
+                                    <img src="static/images/detail/user.png" alt="">
+                                </div>
+                                <span class="user-name">ONe370126768</span>
+                                <span class="user-rate"></span>
+                            </div>
+                            <!-- 右侧评论信息栏 -->
+                            <div class="right-comment">
+                                <div class="info">
+                                    <div class="rate-status">
+                                        <span class="comment-rating">
+                                            <span class="rate-stars"></span>
+                                        </span>
+                                        <span class="time">2017-03-06</span>
+                                    </div>
+                                </div>
+                                <div class="comment-view">
+                                    <p class="content">
+                                        朋友小聚，朋友推荐酷姿，卫生干净，价格优惠，特意选了个鬼屋系列，哈哈！好有感觉。音质不错，棒棒哒，值得推荐
+                                    </p>
+                                    <div class="comment-img">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="shop-name">酷姿时尚主题KTV（望京总店）</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <!-- 左侧用户信息栏 -->
+                            <div class="left-comment">
+                                <div class="user-img">
+                                    <img src="static/images/detail/user.png" alt="">
+                                </div>
+                                <span class="user-name">ONe370126768</span>
+                                <span class="user-rate"></span>
+                            </div>
+                            <!-- 右侧评论信息栏 -->
+                            <div class="right-comment">
+                                <div class="info">
+                                    <div class="rate-status">
+                                        <span class="comment-rating">
+                                            <span class="rate-stars"></span>
+                                        </span>
+                                        <span class="time">2017-03-06</span>
+                                    </div>
+                                </div>
+                                <div class="comment-view">
+                                    <p class="content">
+                                        朋友小聚，朋友推荐酷姿，卫生干净，价格优惠，特意选了个鬼屋系列，哈哈！好有感觉。音质不错，棒棒哒，值得推荐
+                                    </p>
+                                    <div class="comment-img">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="shop-name">酷姿时尚主题KTV（望京总店）</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <!-- 左侧用户信息栏 -->
+                            <div class="left-comment">
+                                <div class="user-img">
+                                    <img src="static/images/detail/user.png" alt="">
+                                </div>
+                                <span class="user-name">ONe370126768</span>
+                                <span class="user-rate"></span>
+                            </div>
+                            <!-- 右侧评论信息栏 -->
+                            <div class="right-comment">
+                                <div class="info">
+                                    <div class="rate-status">
+                                        <span class="comment-rating">
+                                            <span class="rate-stars"></span>
+                                        </span>
+                                        <span class="time">2017-03-06</span>
+                                    </div>
+                                </div>
+                                <div class="comment-view">
+                                    <p class="content">
+                                        朋友小聚，朋友推荐酷姿，卫生干净，价格优惠，特意选了个鬼屋系列，哈哈！好有感觉。音质不错，棒棒哒，值得推荐
+                                    </p>
+                                    <div class="comment-img">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/images/detail/comment.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="shop-name">酷姿时尚主题KTV（望京总店）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 翻页栏 -->
+                    <div class="log-view">
+                        <div class="paginator">
+                            <a href="javascript">首页</a>
+                            <a href="javascript">上一页<i></i></a>
+                            <a href="javascript">1</a>
+                            <a href="javascript">2</a>
+                            <a href="javascript">3</a>
+                            <a href="javascript">下一页<i></i></a>
+                            <a href="javascript">尾页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 侧边栏 -->
+            <div class="right-sidebar">
+            </div>
+        </div>
+    </div>
+    <!-- container end -->
+    <!-- footer start -->
+    <div class="footer"></div>
+    <!-- footer end -->
+    <script src="./src/detail.js"></script>
+    <script src="./src/js/jquery.js"></script>
+    <script src="./src/js/bootstrap.js"></script>
+</body>
+
+</html>
